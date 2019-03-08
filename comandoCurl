@@ -1,0 +1,9 @@
+
+curl -i -X POST -H Content-Type: application/json -d '{"id":"0","nombre":"libreriaHola","direccion":"cll165","telefono":"146546"}' http://localhost:8080/library 
+
+
+curl -i -X POST -H Content-Type:application/json -HAccept:application/json http://localhost:8080/library -d '{"id":"0","nombre":"libreriaHola","direccion":"cll165","telefono":"146546"}'
+
+----BOOK
+
+curl -i -X POST -H 'Content-Type: application/json' -d '{"id":"0","nombre":"LIBRO","autor":"autor222","sinopsis":"libro muy bueno"}' http://localhost:8080/library/0
